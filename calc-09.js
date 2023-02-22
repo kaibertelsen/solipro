@@ -1,7 +1,7 @@
 
   input.oninput = function() {
   document.getElementById("areal").value = input.value;
-  document.getElementById("valuedisplay").innerHTLM = input.value;
+  document.getElementById("valuedisplay").innerHTML = input.value;
 	  
 
     var m2= input.value;
