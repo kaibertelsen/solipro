@@ -1,7 +1,9 @@
 
   input.oninput = function() {
   document.getElementById("areal").value = input.value;
-  
+  document.getElementById("valuedisplay").innerHTLM = input.value;
+	  
+
     var m2= input.value;
     //paneler
     let paneler = m2*fantallpaneler;
