@@ -57,7 +57,7 @@ function rabattvolum(paneler){
   var sumprpanel = segment1prisstart-(segment1prisstart*(segment1rabpanel*rpanel));
   var sum = sumprpanel*paneler;
   return (sum);
-	}else if(paneler> segment1antstopp && paneler < segment3prisstart){
+	}else if(paneler> segment1antstopp && paneler < segment3antstart){
    //segment 2
   var rpanel = paneler-segment2antstart;
   console.log("seg2",rpanel);
