@@ -24,14 +24,14 @@
    document.getElementById("arsproduksjon").value = arseffekt;
    
     //Enovastøtte
-      let estotte = enovastotte(paneler, effekt);
-       estotte = estotte.toLocaleString('en-US');
+      let estotten = enovastotte(paneler, effekt);
+      let estotte = estotten.toLocaleString('en-US');
        estotte=estotte.replace(",", " ");
    document.getElementById("stotte").innerHTML = estotte+",-";
    document.getElementById("stotte-2").value = estotte+",-";
 	  
    //Pris
-    let pris = rabattvolum(paneler)-estotte;
+    let pris = rabattvolum(paneler)-estotten;
        pris = round(pris, 0);
        pris = pris.toLocaleString('en-US');
        pris=pris.replace(",", " ");
