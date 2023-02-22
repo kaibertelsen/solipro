@@ -23,8 +23,15 @@
    document.getElementById("produksjon").innerHTML = arseffekt;
    document.getElementById("arsproduksjon").value = arseffekt;
    
+    //Enovastøtte
+      let estotte = enovastotte(paneler, effekt);
+       estotte = estotte.toLocaleString('en-US');
+       estotte=estotte.replace(",", " ");
+   document.getElementById("stotte").innerHTML = estotte+",-";
+   document.getElementById("stotte-2").value = estotte+",-";
+	  
    //Pris
-    let pris = rabattvolum(paneler);
+    let pris = rabattvolum(paneler)-estotte;
        pris = round(pris, 0);
        pris = pris.toLocaleString('en-US');
        pris=pris.replace(",", " ");
@@ -32,12 +39,7 @@
    document.getElementById("pris").innerHTML = pris+",-";
    document.getElementById("pris-2").value = pris+",-";
   
-  //Enovastøtte
-      let estotte = enovastotte(paneler, effekt);
-       estotte = estotte.toLocaleString('en-US');
-       estotte=estotte.replace(",", " ");
-   document.getElementById("stotte").innerHTML = estotte+",-";
-   document.getElementById("stotte-2").value = estotte+",-";
+ 
   };
 
 
