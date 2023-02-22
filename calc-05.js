@@ -50,7 +50,7 @@ function round(value, precision) {
 
 function rabattvolum(paneler){
 
-	if(paneler<=segment2antstart){
+	if(paneler<=segment1antstopp){
   //segment 1
   var rpanel = paneler-segment1antstart;
   var sumprpanel = segment1prisstart-(segment1prisstart*(segment1rabpanel*rpanel));
